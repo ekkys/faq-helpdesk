@@ -12,7 +12,8 @@ class MAplikasiController extends Controller
      */
     public function index()
     {
-        //
+        $aplikasis = MAplikasi::all();
+        return view('aplikasis.index', compact('aplikasis'));
     }
 
     /**

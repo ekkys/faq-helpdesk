@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MAplikasiController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('aplikasis', MAplikasiController::class);
